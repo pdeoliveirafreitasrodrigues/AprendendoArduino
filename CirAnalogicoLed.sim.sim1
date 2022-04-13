@@ -1,0 +1,25 @@
+<circuit type="simulide_1.0" rev="1007" stepSize="1000000" stepsPS="1000000" NLsteps="100000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="824,452" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../AppData/Local/Temp/arduino_build_957166/LedPotenciometro.ino.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="Potentiometer" CircId="Potentiometer-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="1140,468" rotation="0" hflip="1" vflip="1" label="Potentiometer-4" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="1000 Ω" Value_Ohm="421 Ω" />
+
+<item itemtype="Led" CircId="Led-9" mainComp="false" Show_id="false" Show_Val="false" Pos="696,560" rotation="-180" hflip="1" vflip="1" label="Led-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-10" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="772,580" rotation="0" hflip="1" vflip="1" label="Resistor-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Connector" uid="connector-11" startpinid="Potentiometer-4-PinA" endpinid="Uno-1-GND0" pointList="1124,468,1024,468,1024,532,976,532" />
+
+<item itemtype="Connector" uid="connector-12" startpinid="Potentiometer-4-PinB" endpinid="Uno-1-5V0" pointList="1156,468,1156,548,976,548" />
+
+<item itemtype="Connector" uid="connector-13" startpinid="Potentiometer-4-PinM" endpinid="Uno-1-A0" pointList="1140,484,1140,508,976,508" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Resistor-10-rPin" endpinid="Uno-1-13" pointList="788,580,832,580" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Led-9-lPin" endpinid="Resistor-10-lPin" pointList="712,560,756,560,756,580" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Led-9-rPin" endpinid="Uno-1-GND1" pointList="680,560,680,412,1196,412,1196,540,976,540" />
+
+</circuit>
